@@ -98,3 +98,40 @@ footer{
   padding: 1%;
   color: white;
 }
+
+#past{
+    width: 50%
+}
+
+#past h2{
+    text-decoration: underline white;
+    text-align: center;
+    margin-top: 2px;
+    text-transform: uppercase;
+}
+
+#past h3{
+    text-decoration: underline white;
+    margin-top: 2px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#upcoming{
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    top: 100px
+}
+
+#upcoming h2{
+    text-decoration: underline white;
+    text-align: center;
+    margin-top: 2px;
+    text-transform: uppercase;
+}
+
+#upcoming li{
+    margin-top: 5px;
+    font-size: large;
+}
