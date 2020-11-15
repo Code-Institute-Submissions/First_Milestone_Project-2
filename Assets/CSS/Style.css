@@ -135,3 +135,19 @@ footer{
     margin-top: 5px;
     font-size: large;
 }
+
+form{
+    width: 50%;
+    position: absolute;
+    right: 0px;
+    bottom: 300px;
+    border: 1px solid white;
+}
+
+form h2{
+    text-align: center;
+}
+
+input{
+  display: inline-block;
+  }

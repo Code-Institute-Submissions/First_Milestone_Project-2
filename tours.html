@@ -1,108 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="Assets/CSS/Style.css">
-    <title>Black Zone</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+		integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+	<link rel="stylesheet" href="Assets/CSS/Style.css">
+	<title>Black Zone</title>
 </head>
+
 <body>
-    <section id="heading">
-        <h1 id="name">Black Zone</h1>
-        <nav>
-            <ul id="menu">
-                <li>
-                <a href="book.html">Book</a>
-                </li>
-                <li>
-                <a class="active" href="tours.html">Tours</a>
-                </li>
-                <li>
-                <a href="home.html">Home</a>
-                </li>
-            </ul>
-        </nav>
-        <img id="logo" src="data:image/jpeg;base64,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" 
+	<section id="heading">
+		<h1 id="name">Black Zone</h1>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a class="active" href="tours.html">Tours</a>
+				</li>
+				<li>
+					<a href="members.html">Members</a>
+				</li>
+				<li>
+					<a href="home.html">Home</a>
+				</li>
+			</ul>
+		</nav>
+		<img id="logo" src="data:image/jpeg;base64,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"
         alt="Black Veil Brides Logo">
     </section>
-    <section id="past">
-    <h2>Past Tours</h2>
-    <h3>2009–2010</h3>
-    <ul class="list">
-        <li>On Leather Wings Tour (December 2009)</li>
-        <li>Royal Family Clothing Tour (with From First to Last, Eyes Set to Kill, Confide, and Sleeping with Sirens – March–April 2010)</li>
-        <li>Sacred Ceremony Tour (with Vampires Everywhere!, Modern Day Escape, and Get Scared – July–August 2010)</li>
-        <li>Entertainment or Death Tour (with William Control and Motionless in White – October–November 2010)</li>
-        <li>Pins and Needles Tour (with The Birthday Massacre; supported by Dommin, and Aural Vampire – November 2010)</li>
-    </ul>
-    <h3>2011</h3>
-    <ul class="list">
-        <li>God Save the Scream Tour (supported Murderdolls with The Defiled in the UK – February 2011)</li>
-        <li>AP Tour (with D.R.U.G.S., I See Stars, VersaEmerge, and Conditions – March–May 2011)</li>
-        <li>Download Festival</li>
-        <li>Warped Tour (June–August 2011), Black Veil Brides missed the first week of the tour on account of Andy's broken ribs.</li>
-        <li>UK Tour (with Yashin and My Passion – October–November 2011), Black Veil Brides missed a couple dates due to Biersack's broken nose.</li>
-        <li>Buried Alive Tour (supported Avenged Sevenfold with Hollywood Undead and Asking Alexandria – November–December 2011)</li>
-    </ul>
-    <h3>2012–13</h3>
-    <ul class="list">
-        <li>UK and Ireland Tour (supported by D.R.U.G.S. – March–April 2012)</li>
-        <li>Download Festival</li>
-        <li>European Summer Tour (supporting Slash and Mötley Crüe – June 2012) Black Veil Brides cancelled the last week of the European Summer Tour dates due to the death of Biersack's grandfather.</li>
-        <li>The Church of the Wild Ones Tour: first leg (supported by William Control – January 2013)</li>
-        <li>Kerrang! Tour (with Chiodos, Tonight Alive, and Fearless Vampire Killers – February 2013)</li>
-        <li>The Church of the Wild Ones Tour: second leg (supported by William Control – February–March 2013)</li>
-        <li>The Church of the Wild Ones Tour: third/European leg (supported by Heaven's Basement – April 2013)</li>
-        <li>Warped Tour (June–August 2013)</li>
-        <li>HardDrive Live presents: Monster Energy Outbreak Tour (supporting Bullet for My Valentine with Stars in Stereo and Throw the Fight – September–November 2013)</li>
-    </ul>
-    <h3>2014–15</h3>
-    <ul class="list">
-        <li>Black Mass Tour (October–December 2014), supported by Falling in Reverse, Set It Off and Drama Club</li>
-        <li>Black Mass Canada and US Tour (February–March 2015), supported by Memphis May Fire, Ghost Town</li>
-        <li>Black Mass Europe Tour (march-April 2015) supported by Fearless Vampire Killers, Like A Storm</li>
-        <li>Download Festival</li>
-        <li>Vans Warped Tour (June–August 2015)</li>
-        <li>Vans Warped Tour UK (18 October 2015)</li>
-    </ul>
-    <h3>2018</h3>
-    <ul class="list">
-        <li>The Resurrection Tour (January - March 2018), supported by Asking Alexandria and Crown the Empire[</li>
-        <li>The Resurrection Tour USA (April - May 2018), supported by Asking Alexandria and Blessthefall</li>
-        <li>Welcome To Rockville (28 April 2018)</li>
-        <li>Carolina Rebellion (5 May 2018)</li>
-        <li>Northern Invasion (13 May 2018)</li>
-        <li>Rock on the Range (19 May 2018)</li>
-        <li>Download Festival UK (10 June 2018)</li>
-        <li>Vans Warped Tour (June - July 2018)</li>
-        <li>Aftershock Festival (14 October 2018)</li>
-    </ul>
-    </section>
-    <section id="upcoming">
-    <h2>Upcoming concerts</h2>
-    <ul>
-        <li>Eatons Hill, QLD, Australia (Eatons Hill Hotel & Function Centre, May 20 2021)</li>
-        <li>Thornbury, VIC, Australia (The Croxton, May 22 2021)</li>
-        <li>Hindmarsh, SA, Australia (The Gov, May 24 2021)</li>
-        <li>Nickelsdoft, Australia (Nova Rock Festival, June 2 2021)</li>
-        <li>Castle Donington, UK (Download Festival, June 4 2021)</li>
-        <li>St. Petersburg, Russian Federation (A2, June 6 2021)</li>
-        <li>Moscow, Russian Federation (Adrenaline Stadium Live, June 7 2021)</li>
-        <li>Kyiv(Kiev), Ukraine (Green Theatre, June 9 2021)</li>
-        <li>Hradec Králové, Czech Republic (Rock For People 2021, June 10 2021)</li>
-    </ul>
-    </section>
-    <footer>
-        <ul class="social-networks">
-          <li><a href="https://www.facebook.com/Blackveilbrides/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-          <li><a href="https://twitter.com/blackveilbrides" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-          <li><a href="https://www.youtube.com/user/BlackVeilBridestv" target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-          <li><a href="https://www.instagram.com/blackveilbrides/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          <li><a href="https://open.spotify.com/artist/6O7MpKrY91vlCd4Osi6XKs" target="_blank"><i class="fab fa-spotify"></i></a></li>
-          <li><a href="https://music.apple.com/us/artist/black-veil-brides/276789923" target="_blank"><i class="fab fa-apple"></i></a></li>
-          <li><a href="https://shop.blackveilbrides.net/" target="_blank"><i class="fas fa-tshirt"> Merch</i></a></li>
-        </ul>
-    </footer>
+		<section id="past">
+			<h2>Past Tours</h2>
+			<h3>2009–2010</h3>
+			<ul class="list">
+				<li>On Leather Wings Tour (December 2009)</li>
+				<li>Royal Family Clothing Tour (with From First to Last, Eyes Set to Kill, Confide, and Sleeping with
+					Sirens – March–April 2010)</li>
+				<li>Sacred Ceremony Tour (with Vampires Everywhere!, Modern Day Escape, and Get Scared – July–August
+					2010)</li>
+				<li>Entertainment or Death Tour (with William Control and Motionless in White – October–November 2010)
+				</li>
+				<li>Pins and Needles Tour (with The Birthday Massacre; supported by Dommin, and Aural Vampire – November
+					2010)</li>
+			</ul>
+			<h3>2011</h3>
+			<ul class="list">
+				<li>God Save the Scream Tour (supported Murderdolls with The Defiled in the UK – February 2011)</li>
+				<li>AP Tour (with D.R.U.G.S., I See Stars, VersaEmerge, and Conditions – March–May 2011)</li>
+				<li>Download Festival</li>
+				<li>Warped Tour (June–August 2011), Black Veil Brides missed the first week of the tour on account of
+					Andy's broken ribs.</li>
+				<li>UK Tour (with Yashin and My Passion – October–November 2011), Black Veil Brides missed a couple
+					dates due to Biersack's broken nose.</li>
+				<li>Buried Alive Tour (supported Avenged Sevenfold with Hollywood Undead and Asking Alexandria –
+					November–December 2011)</li>
+			</ul>
+			<h3>2012–13</h3>
+			<ul class="list">
+				<li>UK and Ireland Tour (supported by D.R.U.G.S. – March–April 2012)</li>
+				<li>Download Festival</li>
+				<li>European Summer Tour (supporting Slash and Mötley Crüe – June 2012) Black Veil Brides cancelled the
+					last week of the European Summer Tour dates due to the death of Biersack's grandfather.</li>
+				<li>The Church of the Wild Ones Tour: first leg (supported by William Control – January 2013)</li>
+				<li>Kerrang! Tour (with Chiodos, Tonight Alive, and Fearless Vampire Killers – February 2013)</li>
+				<li>The Church of the Wild Ones Tour: second leg (supported by William Control – February–March 2013)
+				</li>
+				<li>The Church of the Wild Ones Tour: third/European leg (supported by Heaven's Basement – April 2013)
+				</li>
+				<li>Warped Tour (June–August 2013)</li>
+				<li>HardDrive Live presents: Monster Energy Outbreak Tour (supporting Bullet for My Valentine with Stars
+					in Stereo and Throw the Fight – September–November 2013)</li>
+			</ul>
+			<h3>2014–15</h3>
+			<ul class="list">
+				<li>Black Mass Tour (October–December 2014), supported by Falling in Reverse, Set It Off and Drama Club
+				</li>
+				<li>Black Mass Canada and US Tour (February–March 2015), supported by Memphis May Fire, Ghost Town</li>
+				<li>Black Mass Europe Tour (march-April 2015) supported by Fearless Vampire Killers, Like A Storm</li>
+				<li>Download Festival</li>
+				<li>Vans Warped Tour (June–August 2015)</li>
+				<li>Vans Warped Tour UK (18 October 2015)</li>
+			</ul>
+			<h3>2018</h3>
+			<ul class="list">
+				<li>The Resurrection Tour (January - March 2018), supported by Asking Alexandria and Crown the Empire[
+				</li>
+				<li>The Resurrection Tour USA (April - May 2018), supported by Asking Alexandria and Blessthefall</li>
+				<li>Welcome To Rockville (28 April 2018)</li>
+				<li>Carolina Rebellion (5 May 2018)</li>
+				<li>Northern Invasion (13 May 2018)</li>
+				<li>Rock on the Range (19 May 2018)</li>
+				<li>Download Festival UK (10 June 2018)</li>
+				<li>Vans Warped Tour (June - July 2018)</li>
+				<li>Aftershock Festival (14 October 2018)</li>
+			</ul>
+		</section>
+		<section id="upcoming">
+			<h2>Upcoming concerts</h2>
+			<ul>
+				<li>Eatons Hill, QLD, Australia (Eatons Hill Hotel & Function Centre, May 20 2021)</li>
+				<li>Thornbury, VIC, Australia (The Croxton, May 22 2021)</li>
+				<li>Hindmarsh, SA, Australia (The Gov, May 24 2021)</li>
+				<li>Nickelsdoft, Australia (Nova Rock Festival, June 2 2021)</li>
+				<li>Castle Donington, UK (Download Festival, June 4 2021)</li>
+				<li>St. Petersburg, Russian Federation (A2, June 6 2021)</li>
+				<li>Moscow, Russian Federation (Adrenaline Stadium Live, June 7 2021)</li>
+				<li>Kyiv(Kiev), Ukraine (Green Theatre, June 9 2021)</li>
+				<li>Hradec Králové, Czech Republic (Rock For People 2021, June 10 2021)</li>
+				<li>Nuremberg, Germany (Rock im Park, June 11 2021)</li>
+				<li>Nürberg, Germany (Rock am Ring, June 11 2021)</li>
+				<li>Budapest, Hungary (Budapest Park, June 15 2021)</li>
+				<li>Wroclaw, Poland (A2 Centrum Koncertowe, June 16 2021)</li>
+				<li>Warsaw, Poland (Progresja, June 17 2021)</li>
+				<li>Dessel, Belgium (Graspop metal meeting, June 17 2021)</li>
+				<li>Sacramento, Ca, Us (Monster Energy Aftershock, October 7 2021)</li>
+			</ul>
+		</section>
+		<section id="book">
+			<form action="https://formdump.codeinstitute.net/">
+				<h2>Booking Form</h2>
+                <label for="Booker">Name Of Booker</label>
+				<input type="text" id="booker" name="Booker" required>
+                <label for="Date of Booking">Date of Booking</label>
+                <input type="date" id="DOB" name="Date of Booking" required>
+                <label for="Email Address">Email Address</label>
+                <input type="email" id="email" name="Email Address" required>
+                <input type="submit" value="submit">
+            </form>
+		</section>
+		<footer>
+			<ul class="social-networks">
+				<li><a href="https://www.facebook.com/Blackveilbrides/"
+						target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+				<li><a href="https://twitter.com/blackveilbrides"
+						target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="https://www.youtube.com/user/BlackVeilBridestv"
+						target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+				<li><a href="https://www.instagram.com/blackveilbrides/"
+						target="_blank"><i class="fab fa-instagram"></i></a></li>
+				<li><a href="https://open.spotify.com/artist/6O7MpKrY91vlCd4Osi6XKs"
+						target="_blank"><i class="fab fa-spotify"></i></a></li>
+				<li><a href="https://music.apple.com/us/artist/black-veil-brides/276789923"
+						target="_blank"><i class="fab fa-apple"></i></a></li>
+				<li><a href="https://shop.blackveilbrides.net/" target="_blank"><i class="fas fa-tshirt"> Merch</i></a>
+				</li>
+			</ul>
+		</footer>
 </body>
+
 </html>
