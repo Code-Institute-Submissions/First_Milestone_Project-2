@@ -137,11 +137,14 @@ footer{
 }
 
 form{
-    width: 50%;
+    width: 350px;
+    height: 270px;
     position: absolute;
-    right: 0px;
-    bottom: 300px;
+    right: 550px;
+    bottom: 100px;
     border: 1px solid white;
+    border-radius: 20px;
+    background-color: #555555
 }
 
 form h2{
@@ -149,5 +152,11 @@ form h2{
 }
 
 input{
-  display: inline-block;
+  display: block;
+  margin: 5px
   }
+
+#reason{
+    width: 90%;
+    height: 50px
+}
