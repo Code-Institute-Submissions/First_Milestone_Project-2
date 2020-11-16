@@ -56,7 +56,7 @@ body{
     width: 50%
 }
 
-#text h2{
+h2{
     text-decoration: underline white;
     text-align: center;
     margin-top: 2px;
@@ -67,7 +67,7 @@ p{
     margin-top: 5px;
 }
 
-#members{
+#Band{
     width: 50%;
     position: absolute;
     top: 100px;
@@ -75,7 +75,7 @@ p{
     height: 80%;
 }
 
-#text h3{
+h3{
     text-decoration: underline white;
     text-align: center;
 }
@@ -103,32 +103,11 @@ footer{
     width: 50%
 }
 
-#past h2{
-    text-decoration: underline white;
-    text-align: center;
-    margin-top: 2px;
-    text-transform: uppercase;
-}
-
-#past h3{
-    text-decoration: underline white;
-    margin-top: 2px;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 #upcoming{
     width: 50%;
     position: absolute;
     right: 0px;
     top: 100px
-}
-
-#upcoming h2{
-    text-decoration: underline white;
-    text-align: center;
-    margin-top: 2px;
-    text-transform: uppercase;
 }
 
 #upcoming li{
@@ -147,10 +126,6 @@ form{
     background-color: #555555
 }
 
-form h2{
-    text-align: center;
-}
-
 input{
   display: block;
   margin: 5px
@@ -159,4 +134,63 @@ input{
 #reason{
     width: 90%;
     height: 50px
+}
+
+#Members{
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 4px;
+    margin: 10px;
+}
+
+#Members a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+#Members li{
+    border: 1px solid white;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: gray;
+}
+
+#Andy h2{
+    text-align: center;
+}
+
+#Andy p{
+    width: 50%
+}
+
+#Andy img{
+    right: 0px;
+    top: 170px;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+
+h4{
+    margin-top: 4px;
+    color: grey;
+    text-decoration: underline
+}
+
+#Andy h3{
+    text-decoration: underline;
+    text-align: left;
+    margin-top: 4px;
+}
+
+#Jake h3{
+    text-decoration: underline;
+    text-align: left;
+    margin-top: 4px;
+}
+
+#Jake p{
+    width: 50%;
 }
