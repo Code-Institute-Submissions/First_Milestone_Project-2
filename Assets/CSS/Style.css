@@ -161,18 +161,6 @@ input{
     text-align: center;
 }
 
-#Andy p{
-    width: 50%
-}
-
-#Andy img{
-    right: 0px;
-    top: 170px;
-    position: absolute;
-    width: 50%;
-    height: 100%;
-}
-
 h4{
     margin-top: 4px;
     color: grey;
@@ -191,6 +179,28 @@ h4{
     margin-top: 4px;
 }
 
-#Jake p{
-    width: 50%;
+#Jinxx h3{
+    text-decoration: underline;
+    text-align: left;
+    margin-top: 4px;
+}
+
+#PM a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#PM{
+    font-size: 110%;
+    list-style-type: none;
+    letter-spacing: 2px;
+    margin: 5px;
+}
+
+#PM li{
+    border: 1px solid white;
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: gray;
 }
